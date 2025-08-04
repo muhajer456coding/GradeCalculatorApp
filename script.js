@@ -19,5 +19,5 @@ function calculate() {
   const percentage = totalWeighted / totalCredits;
 
   document.getElementById("result").innerText = 
-      " The whole percentage you got: " + percentage.toFixed(2);
+      " ای هم آخریو خلاص همیقزر: " + percentage.toFixed(2);
 }
