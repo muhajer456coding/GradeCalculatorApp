@@ -1,23 +1,49 @@
-function calculate() {
-  const java = Number(document.getElementById("java").value);
-  const comp = Number(document.getElementById("comp").value);
-  const math = Number(document.getElementById("math").value);
-  const sirat = Number(document.getElementById("sirat").value);
-  const nezam = Number(document.getElementById("nezam").value);
-  const english = Number(document.getElementById("english").value);
-
-  const totalWeighted = 
-      (java * 5) +
-      (comp * 5) +
-      (math * 5) +
-      (sirat * 2) +
-      (nezam * 2) +
-      (english * 2);
-
-  const totalCredits = 5 + 5 + 5 + 2 + 2 + 2; // 21
-
-  const percentage = totalWeighted / totalCredits;
-
-  document.getElementById("result").innerText = 
-      " The whole percentage you got: " + percentage.toFixed(2);
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
+.container {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: right;
+  width: 300px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  background-color: #d26aff;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b255dd;
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #fffd;
+  }
